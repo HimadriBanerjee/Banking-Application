@@ -17,7 +17,7 @@ To create a savings account,we need
 Services:
 Methods to save Customer and Account details
 
-Controllers:
+Controllers:(endpoints)
 Paths to execute the method by http request
 
 

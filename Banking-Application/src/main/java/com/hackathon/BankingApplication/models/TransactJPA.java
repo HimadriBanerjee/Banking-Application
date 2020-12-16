@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "transaction")
+@Table(name = "transact")
 @Getter
 @Setter
 @NoArgsConstructor

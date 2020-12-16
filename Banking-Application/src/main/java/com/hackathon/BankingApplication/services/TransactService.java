@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 @Service
 public class TransactService {
+
     private final TransactRepository transactRepository;
     public TransactService(TransactRepository transactRepository) {
         this.transactRepository = transactRepository;
@@ -15,9 +16,9 @@ public class TransactService {
     }
     public TransactJPA getTransactionByAccountNo(Long accountno) {
         Optional<TransactJPA> transact = transactRepository.findById(accountno);
-        if (transact.isPresent()) {
-            return transact.get();
+        if (transact.isEmpty()) {
+            return null;
         }
-        return null;
+        return transact.get();
     }
 }

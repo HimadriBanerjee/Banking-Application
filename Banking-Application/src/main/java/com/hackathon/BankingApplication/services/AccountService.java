@@ -1,10 +1,14 @@
 package com.hackathon.BankingApplication.services;
 import com.hackathon.BankingApplication.enums.AccountType;
 import com.hackathon.BankingApplication.models.Account;
+import com.hackathon.BankingApplication.models.TransactJPA;
+import com.hackathon.BankingApplication.repository.TransactRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transaction;
+import javax.transaction.Transactional;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 @Service

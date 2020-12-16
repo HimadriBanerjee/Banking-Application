@@ -25,7 +25,7 @@ public class AccountController {
         return accountService.saveA(account);}
 
     @PostMapping(path = "transact",consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Map<String,Object> transactDetails(@RequestBody Map<String,Object>transactJPA){
-        return (Map<String, Object>) transactService.saveTransact((TransactJPA) transactJPA);
+   public TransactJPA transactDetails(@RequestBody TransactJPA transactJPA){
+        return  transactService.saveTransact((TransactJPA) transactJPA);
     }
 }

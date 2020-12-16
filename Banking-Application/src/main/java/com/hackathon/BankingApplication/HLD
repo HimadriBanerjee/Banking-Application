@@ -1,0 +1,23 @@
+HLD/MACRO LEVEL DESIGN:-
+
+GOAL:
+CONVERTING BUSINESS REQUIREMENTS TO HIGH LEVEL SOLUTIONS
+
+TECHNOLOGIES USED:
+JAVA
+SPRINGBOOT
+PostgreSQL
+
+To create a savings account,we need
+1.Customer class with its attriutes
+2.Account class with its attributes
+3.Types of Savings Account
+4.Transaction class with its attributes
+
+Services:
+Methods to save Customer and Account details
+
+Controllers:
+Paths to execute the method by http request
+
+
